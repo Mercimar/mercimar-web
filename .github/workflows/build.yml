@@ -1,0 +1,40 @@
+name: Build & Deploy Merci Mar
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:  # permite correr manualmente desde GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Generar index.html
+        run: node build.js
+
+      - name: Commit y push del index.html generado
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add index.html
+          if git diff --staged --quiet; then
+            echo "Sin cambios en index.html. Nada que hacer."
+          else
+            git commit -m "🔨 build: regenerar index.html [skip ci]"
+            git push
+          fi

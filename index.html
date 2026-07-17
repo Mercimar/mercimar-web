@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Merci Mar — Ropa femenina exclusiva y joyería diseñada para la mujer de hoy — cómoda, elegante y con personalidad.">
+  <meta property="og:title" content="Merci Mar">
+  <meta property="og:description" content="Ropa femenina exclusiva y joyería diseñada para la mujer de hoy — cómoda, elegante y con personalidad.">
+  <meta name="theme-color" content="#FFFFFF">
+  <title>Merci Mar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<!-- ── Navbar ── -->
+<header id="navbar" class="navbar">
+  <div class="navbar-inner">
+    <a href="#" class="navbar-logo">Merci Mar</a>
+    <nav class="navbar-links"><a href="#col-joyeria" class="nav-link">Joyeria</a><a href="#col-ropa" class="nav-link">Ropa</a></nav>
+    <a href="https://wa.me/50762721611" target="_blank" rel="noopener" class="navbar-wa" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.099 1.51 5.824L.057 23.17a.75.75 0 00.916.916l5.347-1.453A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.908 0-3.7-.497-5.254-1.367l-.376-.22-3.903 1.06 1.06-3.903-.22-.376A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- ── Hero ── -->
+<section class="hero" style="background-image:url('assets/images/hero.png')">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Nueva Colección</p>
+    <h1 class="hero-title">Merci Mar</h1>
+    <p class="hero-tagline">Moda que te hace sentir tú</p>
+    <button id="btn-catalogo" class="btn-hero">Ver Catálogo</button>
+  </div>
+</section>
+
+<!-- ── Catálogo ── -->
+<main id="catalogo" class="catalogo">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Colección</h2>
+      <p class="section-sub">Ropa femenina exclusiva y joyería diseñada para la mujer de hoy — cómoda, elegante y con personalidad.</p>
+    </div>
+    <div class="filter-bar" id="filter-bar">
+  <button class="filter-btn active" data-filter="all">Todos</button>
+  <button class="filter-btn" data-filter="joyeria">Joyeria</button><button class="filter-btn" data-filter="ropa">Ropa</button>
+</div>
+    <section id="col-joyeria" class="col-section">
+  <div class="col-grid">
+    <article class="product-card" data-id="collar-dorado" data-col="joyeria" role="button" tabindex="0" aria-label="Ver Collar Cadena Dorada">
+  <div class="card-img-wrap">
+    <img src="content/colecciones/joyeria/items/collar-dorado/1.png" alt="Collar Cadena Dorada" loading="lazy" class="card-img">
+    <div class="card-overlay"><span>Ver detalle</span></div>
+  </div>
+  <div class="card-body">
+    <h3 class="card-nombre">Collar Cadena Dorada</h3>
+    <span class="card-precio">$45.000 COP</span>
+  </div>
+</article>
+
+<!-- Modal: collar-dorado -->
+<div id="modal-collar-dorado" class="product-modal" role="dialog" aria-modal="true" aria-label="Collar Cadena Dorada">
+  <div class="modal-backdrop"></div>
+  <div class="modal-panel">
+    <button class="modal-close" aria-label="Cerrar">✕</button>
+    <div class="modal-gallery">
+      <div class="modal-images"><img src="content/colecciones/joyeria/items/collar-dorado/1.png" alt="Collar Cadena Dorada - foto 1" loading="lazy" class="modal-img active"></div>
+      
+    </div>
+    <div class="modal-info">
+      <h2 class="modal-nombre">Collar Cadena Dorada</h2>
+      <p class="modal-precio">$45.000 COP</p>
+      
+      <p class="modal-material"><strong>Material:</strong> Acero inoxidable bañado en oro 18K</p>
+      <p class="modal-desc">El complemento perfecto para elevar cualquier outfit. Cadena delicada con colgante minimalista. No se opaca, no mancha la piel.</p>
+      <div class="modal-ctas">
+        <a href="https://wa.me/50762721611?text=Hola!%20Me%20interesa%20informaci%C3%B3n%20sobre%20Collar%20Cadena%20Dorada" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.099 1.51 5.824L.057 23.17a.75.75 0 00.916.916l5.347-1.453A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.908 0-3.7-.497-5.254-1.367l-.376-.22-3.903 1.06 1.06-3.903-.22-.376A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Pedir por WhatsApp
+        </a>
+        <a href="https://www.instagram.com/_mercimar" target="_blank" rel="noopener" class="btn btn-instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Ver en Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+<section id="col-ropa" class="col-section">
+  <div class="col-grid">
+    <article class="product-card" data-id="blusa-lino-blanca" data-col="ropa" role="button" tabindex="0" aria-label="Ver Blusa Lino Blanca">
+  <div class="card-img-wrap">
+    <img src="content/colecciones/ropa/items/blusa-lino-blanca/1.png" alt="Blusa Lino Blanca" loading="lazy" class="card-img">
+    <div class="card-overlay"><span>Ver detalle</span></div>
+  </div>
+  <div class="card-body">
+    <h3 class="card-nombre">Blusa Lino Blanca</h3>
+    <span class="card-precio">$85.000 COP</span>
+  </div>
+</article>
+
+<!-- Modal: blusa-lino-blanca -->
+<div id="modal-blusa-lino-blanca" class="product-modal" role="dialog" aria-modal="true" aria-label="Blusa Lino Blanca">
+  <div class="modal-backdrop"></div>
+  <div class="modal-panel">
+    <button class="modal-close" aria-label="Cerrar">✕</button>
+    <div class="modal-gallery">
+      <div class="modal-images"><img src="content/colecciones/ropa/items/blusa-lino-blanca/1.png" alt="Blusa Lino Blanca - foto 1" loading="lazy" class="modal-img active"></div>
+      
+    </div>
+    <div class="modal-info">
+      <h2 class="modal-nombre">Blusa Lino Blanca</h2>
+      <p class="modal-precio">$85.000 COP</p>
+      <p class="modal-tallas"><strong>Tallas:</strong> XS · S · M · L</p>
+      <p class="modal-material"><strong>Material:</strong> 100% Lino natural</p>
+      <p class="modal-desc">La blusa perfecta para tu día a día. Corte recto con manga tres cuartos, fresca y cómoda sin perder la elegancia. Ideal para combinar con pantalón wide leg o falda midi.</p>
+      <div class="modal-ctas">
+        <a href="https://wa.me/50762721611?text=Hola!%20Me%20interesa%20informaci%C3%B3n%20sobre%20Blusa%20Lino%20Blanca" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.099 1.51 5.824L.057 23.17a.75.75 0 00.916.916l5.347-1.453A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.908 0-3.7-.497-5.254-1.367l-.376-.22-3.903 1.06 1.06-3.903-.22-.376A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Pedir por WhatsApp
+        </a>
+        <a href="https://www.instagram.com/_mercimar" target="_blank" rel="noopener" class="btn btn-instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Ver en Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<article class="product-card" data-id="pantalon-wide-leg" data-col="ropa" role="button" tabindex="0" aria-label="Ver Pantalón Wide Leg Beige">
+  <div class="card-img-wrap">
+    <img src="content/colecciones/ropa/items/pantalon-wide-leg/1.png" alt="Pantalón Wide Leg Beige" loading="lazy" class="card-img">
+    <div class="card-overlay"><span>Ver detalle</span></div>
+  </div>
+  <div class="card-body">
+    <h3 class="card-nombre">Pantalón Wide Leg Beige</h3>
+    <span class="card-precio">$98.000 COP</span>
+  </div>
+</article>
+
+<!-- Modal: pantalon-wide-leg -->
+<div id="modal-pantalon-wide-leg" class="product-modal" role="dialog" aria-modal="true" aria-label="Pantalón Wide Leg Beige">
+  <div class="modal-backdrop"></div>
+  <div class="modal-panel">
+    <button class="modal-close" aria-label="Cerrar">✕</button>
+    <div class="modal-gallery">
+      <div class="modal-images"><img src="content/colecciones/ropa/items/pantalon-wide-leg/1.png" alt="Pantalón Wide Leg Beige - foto 1" loading="lazy" class="modal-img active"></div>
+      
+    </div>
+    <div class="modal-info">
+      <h2 class="modal-nombre">Pantalón Wide Leg Beige</h2>
+      <p class="modal-precio">$98.000 COP</p>
+      <p class="modal-tallas"><strong>Tallas:</strong> XS · S · M · L · XL</p>
+      <p class="modal-material"><strong>Material:</strong> Lino algodón</p>
+      <p class="modal-desc">El básico que toda mujer necesita. Corte wide leg que alarga y estiliza, tela liviana perfecta para el calor. Combina con absolutamente todo.</p>
+      <div class="modal-ctas">
+        <a href="https://wa.me/50762721611?text=Hola!%20Me%20interesa%20informaci%C3%B3n%20sobre%20Pantal%C3%B3n%20Wide%20Leg%20Beige" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.099 1.51 5.824L.057 23.17a.75.75 0 00.916.916l5.347-1.453A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.908 0-3.7-.497-5.254-1.367l-.376-.22-3.903 1.06 1.06-3.903-.22-.376A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Pedir por WhatsApp
+        </a>
+        <a href="https://www.instagram.com/_mercimar" target="_blank" rel="noopener" class="btn btn-instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Ver en Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<article class="product-card" data-id="vestido-midi" data-col="ropa" role="button" tabindex="0" aria-label="Ver Vestido Midi Terracota">
+  <div class="card-img-wrap">
+    <img src="content/colecciones/ropa/items/vestido-midi/1.png" alt="Vestido Midi Terracota" loading="lazy" class="card-img">
+    <div class="card-overlay"><span>Ver detalle</span></div>
+  </div>
+  <div class="card-body">
+    <h3 class="card-nombre">Vestido Midi Terracota</h3>
+    <span class="card-precio">$145.000 COP</span>
+  </div>
+</article>
+
+<!-- Modal: vestido-midi -->
+<div id="modal-vestido-midi" class="product-modal" role="dialog" aria-modal="true" aria-label="Vestido Midi Terracota">
+  <div class="modal-backdrop"></div>
+  <div class="modal-panel">
+    <button class="modal-close" aria-label="Cerrar">✕</button>
+    <div class="modal-gallery">
+      <div class="modal-images"><img src="content/colecciones/ropa/items/vestido-midi/1.png" alt="Vestido Midi Terracota - foto 1" loading="lazy" class="modal-img active"></div>
+      
+    </div>
+    <div class="modal-info">
+      <h2 class="modal-nombre">Vestido Midi Terracota</h2>
+      <p class="modal-precio">$145.000 COP</p>
+      <p class="modal-tallas"><strong>Tallas:</strong> S · M · L</p>
+      <p class="modal-material"><strong>Material:</strong> Viscosa fluida</p>
+      <p class="modal-desc">Un vestido que te lleva del café de la mañana a la cena de noche sin cambiar de look. Silueta fluida, largo midi, color terracota que favorece todos los tonos de piel.</p>
+      <div class="modal-ctas">
+        <a href="https://wa.me/50762721611?text=Hola!%20Me%20interesa%20informaci%C3%B3n%20sobre%20Vestido%20Midi%20Terracota" target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.099 1.51 5.824L.057 23.17a.75.75 0 00.916.916l5.347-1.453A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.908 0-3.7-.497-5.254-1.367l-.376-.22-3.903 1.06 1.06-3.903-.22-.376A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          Pedir por WhatsApp
+        </a>
+        <a href="https://www.instagram.com/_mercimar" target="_blank" rel="noopener" class="btn btn-instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Ver en Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+  </div>
+</main>
+
+<!-- ── Sobre nosotras ── -->
+<section class="about">
+  <div class="container about-inner">
+    <div class="about-text">
+      <h2>Sobre <em>Merci Mar</em></h2>
+      <p>Ropa femenina exclusiva y joyería diseñada para la mujer de hoy — cómoda, elegante y con personalidad.</p>
+      <p>Cada pieza está pensada para acompañarte en tu día a día — desde el café de la mañana hasta la salida de noche. Compramos con intención y vestimos con identidad.</p>
+    </div>
+    <div class="about-contact">
+      <h3>¿Lista para tu próximo look?</h3>
+      <p>Escríbenos y con gusto te asesoramos.</p>
+      <a href="https://wa.me/50762721611" target="_blank" rel="noopener" class="btn btn-whatsapp btn-large">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.099 1.51 5.824L.057 23.17a.75.75 0 00.916.916l5.347-1.453A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.908 0-3.7-.497-5.254-1.367l-.376-.22-3.903 1.06 1.06-3.903-.22-.376A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        Contactar por WhatsApp
+      </a>
+      <a href="https://www.instagram.com/_mercimar" target="_blank" rel="noopener" class="btn btn-instagram btn-large">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        Ver en Instagram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer class="footer">
+  <div class="container">
+    <span class="footer-brand">Merci Mar</span>
+    <div class="footer-links">
+      <a href="https://wa.me/50762721611" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://www.instagram.com/_mercimar" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Merci Mar. Hecho con amor.</p>
+  </div>
+</footer>
+
+<!-- ── WhatsApp flotante ── -->
+<a href="https://wa.me/50762721611" target="_blank" rel="noopener" class="wa-fab" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.115.549 4.099 1.51 5.824L.057 23.17a.75.75 0 00.916.916l5.347-1.453A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.908 0-3.7-.497-5.254-1.367l-.376-.22-3.903 1.06 1.06-3.903-.22-.376A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+</a>
+
+<script>
+(function() {
+
+// ── Filtro de colecciones ──────────────────────────
+var filterBtns = document.querySelectorAll(".filter-btn");
+var cards = document.querySelectorAll(".product-card");
+
+filterBtns.forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    filterBtns.forEach(function(b) { b.classList.remove("active"); });
+    btn.classList.add("active");
+    var filter = btn.dataset.filter;
+    cards.forEach(function(card) {
+      if (filter === "all" || card.dataset.col === filter) {
+        card.style.display = "";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
+
+// ── Abrir/cerrar modal ─────────────────────────────
+function openModal(id) {
+  var modal = document.getElementById("modal-" + id);
+  if (!modal) return;
+  modal.classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal(modal) {
+  modal.classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+cards.forEach(function(card) {
+  card.addEventListener("click", function() { openModal(card.dataset.id); });
+  card.addEventListener("keydown", function(e) {
+    if (e.key === "Enter" || e.key === " ") { e.preventDefault(); openModal(card.dataset.id); }
+  });
+});
+
+document.querySelectorAll(".modal-close, .modal-backdrop").forEach(function(el) {
+  el.addEventListener("click", function() {
+    var modal = el.closest(".product-modal");
+    if (modal) closeModal(modal);
+  });
+});
+
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") {
+    document.querySelectorAll(".product-modal.open").forEach(function(m) { closeModal(m); });
+  }
+});
+
+// ── Galería de imágenes en modal (swipe + dots) ────
+document.querySelectorAll(".product-modal").forEach(function(modal) {
+  var imgs   = modal.querySelectorAll(".modal-img");
+  var dots   = modal.querySelectorAll(".dot");
+  var current = 0;
+
+  function goTo(index) {
+    imgs.forEach(function(img) { img.classList.remove("active"); });
+    dots.forEach(function(d) { d.classList.remove("active"); });
+    current = (index + imgs.length) % imgs.length;
+    if (imgs[current]) imgs[current].classList.add("active");
+    if (dots[current]) dots[current].classList.add("active");
+  }
+
+  dots.forEach(function(dot) {
+    dot.addEventListener("click", function() { goTo(parseInt(dot.dataset.index)); });
+  });
+
+  // Swipe touch para móvil
+  var touchStartX = 0;
+  var gallery = modal.querySelector(".modal-images");
+  if (gallery) {
+    gallery.addEventListener("touchstart", function(e) {
+      touchStartX = e.touches[0].clientX;
+    }, { passive: true });
+    gallery.addEventListener("touchend", function(e) {
+      var dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) {
+        goTo(dx < 0 ? current + 1 : current - 1);
+      }
+    }, { passive: true });
+  }
+});
+
+// ── Smooth scroll al catálogo ───────────────────────
+var heroBtn = document.getElementById("btn-catalogo");
+if (heroBtn) {
+  heroBtn.addEventListener("click", function() {
+    document.getElementById("catalogo").scrollIntoView({ behavior: "smooth" });
+  });
+}
+
+// ── Navbar scroll behavior ──────────────────────────
+var navbar = document.getElementById("navbar");
+window.addEventListener("scroll", function() {
+  if (window.scrollY > 60) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+}, { passive: true });
+
+})();
+</script>
+</body>
+</html>
