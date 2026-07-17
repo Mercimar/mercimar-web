@@ -2,3 +2,10 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
+
+# Contenido privado (estrategia, calendario, notas internas)
+content/1-estrategias/
+content/2-instagram/
+content/3-calendario/
+content/4-coleccion/
+content/index.md
